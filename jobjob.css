@@ -1,0 +1,94 @@
+.block_1 h1, .block_2 h1, .block_3 h1, .block_4 h1 .block_5 h1 .block_6 h1 .block_7 h1 .block_8 h1{
+    font-weight: normal;
+    font-size: 10px;
+}
+.block_1{
+    padding: 25px;
+    max-width: 350px;
+    margin: 15px;
+    display: inline-block;
+}
+.block_2{
+    padding: 25px;
+    max-width: 350px;
+    margin: 200px;
+    margin-top: 0px;
+    display: inline-block;
+}
+.block_3{
+        padding: 25px;
+        max-width: 350px;
+        margin: 15px;
+        display: inline-block;
+}
+.block_4{
+    padding: 10px;
+    max-width: 350px;
+    display: inline-block;
+}
+.block_5{
+    padding: 10px;
+    max-width: 250px;
+    display: inline-block;
+}
+.block_6{
+    padding: 10px;
+    max-width: 250px;
+    display: inline-block;
+}
+.block_7{
+    padding: 10px;
+    display: inline-block;
+}
+.block_8{
+    padding: 10px;
+    max-width: 250px;
+    display: inline-block;
+}
+.size_1{
+font-size: 30px;
+color: rgb(65, 105, 225);
+}
+.size_2{
+    font-size: 30px;
+    color: rgb(32, 153, 32);
+}
+.size_3{
+    font-size: 22px;
+}
+a.button11 {
+  position: relative;
+  z-index: 1;
+  color: black;
+  font-size: 135%;
+  font-weight: 700;
+  text-decoration: none;
+  padding: .25em .5em;
+}
+a.button11:after {
+  content: "Купить";  /* здесь 6 букв */
+  position: absolute;
+  z-index: -1;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  width: calc(100% + 6*(1em*90/135) - 2px*2*2);  /* где 6*(1em*90/135), где 6 - это 6 букв, 90 - это font-size after, а 135 - это font-size родителя */
+  text-align: right;
+  color: #fff;
+  font-size: 90%;
+  padding: .25em .5em;
+  border-radius: 5px;
+  border: 2px solid rgb(0, 2, 116);
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+  background: linear-gradient(#281ae6, #281ae6) no-repeat 100% 0;
+  background-size: calc(6*(1em*90/135) + .5em) 100%;
+  box-shadow: inset calc(-6*(1em*90/135) - .5em) 0 rgba(255,255,255,0);
+  transition: .3s;
+}
+a.button11:hover:after {
+  box-shadow: inset calc(-6*(1em*90/135) - .5em) 0 rgba(255,255,255,.2);
+}
+a.button11:active:after {
+  background-image: rgb(0, 2, 116);
+}
